@@ -1,39 +1,123 @@
+/* Box Model Hack */
+/* * {
+  box-sizing: border-box;
+} */
+
+/* Clear fix hack */
+/* .clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+    clear: both;
+} */
+
+/******************************************
+/* BASE STYLES
+/****************************************** */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
  * {
-   margin: 0;
+   margin: 1% 2% 3% 2%;
    font-family: "Quicksand";
-   color: #333;
+   color: dimgrey;
+   background-color: white;
  }
+/* 
+ main {
+
+ } */
+
  .navbar {
-   padding: 20px;
+  font-size: .8rem;
+  /* text-decoration: double; */
+   padding: 0px;
    display: flex;
+   justify-content: flex-end;
    align-items: center;
-   max-width: 600px;
+   /* max-width: 95%; */
    margin: 0 auto;
-   border-bottom: 1px solid #f2f2f2;
+   border-bottom: 1px solid dimgrey;
  }
  .navbar h1 {
-   color: #f1356d;
+   color: darkcyan;
  }
- .navbar .links {
+ /* .navbar .links {
    margin-left: auto;
- }
+ } */
  .navbar a {
-   margin-left: 16px;
+   margin-left: 0px;
    text-decoration: none;
-   padding: 6px;
+   /* padding: 6px; */
  }
  .navbar a:hover {
-   color: #f1356d;
+   color: darkcyan;
+   /* border: 2px solid darkcyan;
+   background-color: darkcyan;
+   border-radius: 35px solid darkcyan; */
  }
- .content {
+
+ .titles {
+  font-size: 3rem;
+  color: darkcyan;
+ }
+ /* .content {
    max-width: 600px;
    margin: 40px auto;
    padding: 20px;
+ } */
+
+ .mainContainer {
+  display: flex;
+  margin-top: 20%;
+  margin-bottom: 20%;
  }
 
- .headShot {
-  height: 819px;
-  width: 564px;
+ .mainphoto {
+  display: flex;
+  justify-content: flex-end;
+ }
+
+ .techskills {
+  display: flex;
+  justify-content: flext-start;
+  align-items: center;
+  /* width: 400px;
+  height: 400px; */
+ }
+
+
+.skillsbox {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+}
+
+.biotext {
+  font-size: 1rem;
+}
+
+ .max-w-full {
+  height: 90%;
+  width: 90%; 
+  min-width: 40%;
+  min-height: 40%;
+  border-radius: 15%;
+  border: 2px solid darkcyan;
+ }
+/* .projectboxes {
+  
+} */
+ footer {
+   border-top: 1px solid dimgrey;
+   display: flex;
+   justify-content: center;
  }

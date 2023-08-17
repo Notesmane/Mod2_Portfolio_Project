@@ -32,3 +32,11 @@ API idea2: REST Countries
     - JS logo: <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>
 
     - React logo: <a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Putra Arif Munazar - Flaticon</a>
+
+    - linkedin: <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+
+    - github: <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+
+    - open: <a href="https://www.flaticon.com/free-icons/export" title="export icons">Export icons created by Amazona Adorada - Flaticon</a>
+
+    - cv: <a href="https://www.flaticon.com/free-icons/recruitment" title="recruitment icons">Recruitment icons created by Freepik - Flaticon</a>

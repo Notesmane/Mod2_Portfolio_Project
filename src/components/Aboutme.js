@@ -1,10 +1,10 @@
-
+import cvicon from '../icons/cvicon.png';
+import mycv from '../ronaldPowellCV.pdf';
 
 function Aboutme() {
     return (
         <div id="about">
         <h2 className='titles'>About Me</h2>
-        <button>Resume</button>
         <p className="biotext">
             Highly motivated Software Engineer with a unique
             background as an Industrial Engineer in the prestigious NYC
@@ -48,8 +48,13 @@ function Aboutme() {
             <br></br>
             I'm currently enrolled in PerScholas for Software Engineering, which
             is sponsored by Google and Comcast.
-          </p>
+        </p>
+        <a href= {mycv} without rel="noopener noreferrer" target='_blank'>
+            <button trailingIcon='picture_as_pdf' label="CV">
+            </button>
+        </a>
       </div>
+
     )
 
 }

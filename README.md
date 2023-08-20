@@ -40,3 +40,5 @@ API idea2: REST Countries
     - open: <a href="https://www.flaticon.com/free-icons/export" title="export icons">Export icons created by Amazona Adorada - Flaticon</a>
 
     - cv: <a href="https://www.flaticon.com/free-icons/recruitment" title="recruitment icons">Recruitment icons created by Freepik - Flaticon</a>
+
+    - email: <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>

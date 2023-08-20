@@ -22,11 +22,13 @@
 /****************************************** */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
  * {
-   margin: 1% 2% 3% 2%;
-   font-family: "Quicksand";
+   margin: 1% 4% 2% 4%;
+   font-family: "Outfit";
    color: dimgrey;
    background-color: white;
  }
@@ -38,37 +40,170 @@
  .navbar {
   width: 100%;
   font-size: .8rem;
+  margin-left: 0px;
+  text-decoration: none;
   /* text-decoration: double; */
    padding: 0px;
    display: flex;
-   justify-content: flex-end;
-   align-items: center;
+   /* justify-content: flex-end; */
+   /* align-items: flex-end; */
    /* max-width: 95%; */
-   margin: 0 auto;
+
+   margin: 0%;
+   /* position: absolute ; */
+   top: 10;
    border-bottom: 1px solid dimgrey;
    /* background-color: white;
    position: fixed;
    top: 0; */
  }
+
+ .headerMain {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.headerLeft {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.headerRight {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* justify-content: space-between; */
+  align-items: flex-end;
+}
+
+
+  .weatherContainer {
+    margin: 0 0 0 3%;
+    padding: 0%;
+    line-height: 50%;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-end;
+    background-color: white;
+    /* border-radius: 15px; */
+  }
+  
+  .weatherLeft {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100%;
+    /* flex-direction: column; */
+    margin: 0 2% 0 0;
+    padding: 0%;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .weatherContainer .description {
+    /* position: relative;
+    right: -90%;
+    transform-origin: 0 0;
+    transform: rotate(269deg); */
+  }
+
+  .weatherRight {
+    margin-right: 2%;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+  }
+
+  .weather {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .search {
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .cityLeft {
+    font-size: 4rem;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+  }
+
+  /* .cityLeft {
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  } */
+
+.cityLeft p {
+    font-size: rem;
+}
+
+.cityRight {
+  display: flex;
+  justify-content: right;
+}
+
+  input {
+    background-color: rgba(0, 139, 139, 0.3);
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+  }
+
+  ::placeholder {
+    color: rgb(0, 57, 57);
+  }
+
  .navbar h1 {
    color: darkcyan;
  }
  /* .navbar .links {
    margin-left: auto;
  } */
- .navbar a {
-   margin-left: 0px;
-   text-decoration: none;
-   /* padding: 6px; */
- }
+
  .navbar a:hover {
    color: darkcyan;
+   /* font-weight: bold; */
+   /* border-top: 1px solid darkcyan;
+   border-bottom: 1px solid darkcyan; */
+   transform: translateY(-2px); 
+   transition-property: transform;
+   transition-duration: 0.1s;
+   cursor: pointer;
    /* border: 2px solid darkcyan;
    background-color: darkcyan;
    border-radius: 35px solid darkcyan; */
  }
 
+ .headerRight a {
+  padding-left: 2%;
+ }
+
  .titles {
+  margin: 0;
+  padding: 0;
   font-size: 2rem;
   color: darkcyan;
  }
@@ -79,20 +214,35 @@
  } */
 
  .mainSection {
-  margin-top: 10%;
-  margin-bottom: 20%;
+  margin: 10% 0 20% 0;
+  /* margin-bottom: 20%; */
  }
 
+ .projectsTitleBox, .projectsTitleBox h4 {
+  /* display: flex;
+  justify-content: flext-start;
+  align-items: center; */
+  width: 100%;
+  margin: 0 0 2% 0;
+} 
+
+
 .projectContents {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: white;
+}
+
+.projectContents h3 {
+  margin: 0;
 }
 
  .mainContainer {
   display: flex;
   align-items: center;
+  gap: 2em;
   margin: 0px;
   padding: 0px;
   width: 100%;
@@ -102,17 +252,21 @@
  }
 
  .projectImageColumn {
+  margin: 0;
   display: flex;
   width: 50%;
-  background-color: whitesmoke;
+  height: 100%;
+  background-color: white;
  }
 
  .projectInfoColumn {
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  background-color: whitesmoke;
+  height: 100%;
+  background-color: white;
  }
 
  .sourceLinks {
@@ -130,11 +284,37 @@
   border-radius: 3%;
  }
 
-.homeContent {
-  width: 100%;
+#home {
+  margin: 0;
+  padding: 0;
+}
+
+.homeContentLeft {
+  margin: 0 0 0 0;
+  width: 60%;
+  height: 100%;
+}
+
+/* .homeContentLeft img {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+} */
+
+.homeContentLeft p {
+  margin: 2% 0 3% 0;
+}
+
+.homeContentRight {
+  margin: 0 0 0 0;
+  width: 40%;
+  height: 100%;
+  display: flex; 
+  justify-content: flex-end;
 }
 
  .techskills {
+  margin: 0;
   display: flex;
   justify-content: flext-start;
   align-items: center;
@@ -142,34 +322,53 @@
   height: 400px; */
  }
 
+ .techskills h4 {
+  margin: 0;
+  display: flex;
+  justify-conent: flex-start;
+ }
+
 
 .skillsbox {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 50px;
+  height: 30px;
 }
 
-.biotext {
-  font-size: 1rem;
-}
+/* #about {
+  border: 2px solid darkcyan;
+} */
+
+
 
  .max-w-full {
   height: 90%;
   width: 60%; 
   min-width: 40%;
   min-height: 40%;
-  border-radius: 15%;
+  border-radius: 5%;
+  box-shadow: 30px, 30px, red;
   border: 2px solid darkcyan;
  }
  
- .projects {
+
+footer {
+  /* width: 80%; */
+  border-top: 1px solid dimgrey;
   display: flex;
-  justify-content: flext-start;
+  justify-content: center;
+
+}
+
+ .footer {
+  margin: 5% 0 0 0 ;
+  padding: 0;
+  height: 3%;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-} 
- footer {
-   border-top: 1px solid dimgrey;
-   display: flex;
-   justify-content: center;
+  gap: 3em;
  }
+
+

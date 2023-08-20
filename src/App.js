@@ -1,4 +1,4 @@
-import Aboutme from "./components/Aboutme";
+import Aboutme from "./components/Aboutme/Aboutme";
 import "./index.css";
 import headshot1 from "./headshot1.jpg";
 import html from "./icons/html5icon.png";
@@ -12,69 +12,83 @@ import linkedin from "./icons/linkedinicon.png";
 import openicon from "./icons/openicon.png";
 import { Link } from "react-scroll";
 import tetris from './tetrisScreenShot.png';
+import Weathernew from './components/Weathernew';
+import email from './icons/emailicon.png';
+// import Letsconnectnew from './components/Letsconnectnew';
 
 function App() {
   return (
     <div className="App">
       <header className="headerMain">
         {/* <Navbar /> */}
-        <nav className="navbar">
-          <Link activeClass="active" smooth spy to="home">
-            Home
-          </Link>
-          <Link activeClass="active" smooth spy to="projectsTitleBox">
-            Projects
-          </Link>
-          <Link activeClass="active" smooth spy to="about">
-            About Me
-          </Link>
-          <Link activeClass="active" smooth spy to="letconnect">
-            Let's Connect
-          </Link>
-        </nav>
+
+          <nav className="navbar">
+            {/* <div className='headerLeft'> */}
+              <Weathernew />
+            {/* </div> */}
+            <div className="headerRight">
+              <Link activeClass="active" smooth spy to="home">
+                Home
+              </Link>
+              <Link activeClass="active" smooth spy to="projectsTitleBox">
+                Projects
+              </Link>
+              <Link activeClass="active" smooth spy to="about">
+                About Me
+              </Link>
+              <Link activeClass="active" smooth spy to="letconnect">
+                {/* <Letsconnectnew /> */}
+                Let's Connect
+              </Link>
+            </div>
+          </nav>
+
       </header>
       <br></br>
       <main id="home">
         <section className='mainSection'>
           <div className="mainContainer">
-            <div className='homeContent'>
-              <h1 className="titles">Software Developer</h1>
+            <div className='homeContentLeft'>
+              <h1 className="titles">Junior Software Developer</h1>
               <p>
-                Hi! My Name is Ronald Powell. I'm a recent graduate from
-                PerScholas for Software Development which is fully-sponsored by
-                Google and Comcast. I'm from NYC and can't wait to work with you
-                on your next project.
+                Hi! My Name is Ron Powell. I'm a recent graduate from
+                PerScholas' Certificate Course for Software Development. PerScholas is fully-sponsored by
+                Google and Comcast and prepares its student for real world development. I'm based in NYC and can't wait to work with you on your next project.
               </p>
-              <img className="linkedin" src={linkedin} title="LinkedIn" />
+              <a href="https://www.linkedin.com/in/ron-powell-nyc212/" target='_blank' rel='noreferrer'>
+                <img className="linkedin" src={linkedin} title="LinkedIn" />
+              </a>
+              <a href="https://github.com/Notesmane" target='_blank' rel='noreferrer'>
               <img className="github" src={github} title="Github" />
+              </a>
+              <div className="techskills">
+                <h4>Tech Stack </h4>
+                <div className="skillsbox">
+                  <img className="html" src={html} title="HTML-5" />
+                </div>
+                <div className="skillsbox">
+                  <img className="css" src={css} title="CSS3" />
+                </div>
+                <div className="skillsbox">
+                  <img className="javasc" src={javasc} title="JavaScript" />
+                </div>
+                <div className="skillsbox">
+                  <img className="reackt" src={reackt} title="React" />
+                </div>
+                <div className="skillsbox">
+                  <img className="tailwind" src={tailwind} title="TailwindCSS" />
+                </div>
+              </div>
             </div>
-            <div className="homeContent">
+            <div className="homeContentRight">
               <img className="h-auto max-w-full" alt="..." src={headshot1} />
-            </div>
-          </div>
-          <div className="techskills">
-            <h4>Tech Stack|</h4>
-            <div className="skillsbox">
-              <img className="html" src={html} title="HTML-5" />
-            </div>
-            <div className="skillsbox">
-              <img className="css" src={css} title="CSS3" />
-            </div>
-            <div className="skillsbox">
-              <img className="javasc" src={javasc} title="JavaScript" />
-            </div>
-            <div className="skillsbox">
-              <img className="reackt" src={reackt} title="React" />
-            </div>
-            <div className="skillsbox">
-              <img className="tailwind" src={tailwind} title="TailwindCSS" />
             </div>
           </div>
         </section>
         <section className='mainSection'>
           <div className="projectsTitleBox">
               <h2 className="titles">Projects</h2>
-              <h4>Each project, crafted with efficiency, style and usability in mind.</h4>
+              <h4>Each project crafted with efficiency, style and usability in mind.</h4>
           </div>
           <div className="mainContainer"> {/* OUTER MOST CONTAINER */}
 
@@ -104,8 +118,9 @@ function App() {
               <div className='projectContents'>
                 <div className='sourceLinks'>
                     <h4>Code</h4>
+                    <a href="https://github.com/Notesmane/Tetris-Project" target='_blank' rel='noreferrer'>
                     <img className="github" src={github} title="Github" />
-
+                    </a>
                 </div>
 
                 <div className='sourceLinks'>
@@ -169,25 +184,25 @@ function App() {
         {/* <br></br> */}
         <div className="mainContainer">
           <Aboutme />
-          <h2>For Fun</h2>
-          <ul>
-            <li>Strength Training</li>
-            <li>Dancing At Parties</li>
-            <li>Travelling to New Places</li>
-            <li>Anything Batman</li>
-            <li>Yoga</li>
-            <li>Beach Days</li>
-          </ul>
+          
         </div>
       </main>
       <br></br>
-      <footer className="footer">
-        <div>
+      <footer>
+        <div className='footer'>
           <br></br>
-          <button>Email</button>
-          <button>LinkedIn</button>
-          <button>Contact</button>
-          <button href="https://github.com/Notesmane">Github</button>
+          {/* <button>Email</button> */}
+          <a href="https://www.linkedin.com/in/ron-powell-nyc212/" target='_blank' rel='noreferrer'>
+            <img className="linkedin" src={linkedin} title="LinkedIn" />
+          </a>
+          <a href="https://github.com/Notesmane" target='_blank' rel='noreferrer'>
+            <img className="github" src={github} title="Github" />
+          </a>
+          <a href="https://github.com/Notesmane" target='_blank' rel='noreferrer'>
+            <img className="email" src={email} title="Contact" />
+          </a>
+          {/* <button>Contact</button> */}
+          {/* <button href="https://github.com/Notesmane">Github</button> */}
           <br></br>
         </div>
       </footer>

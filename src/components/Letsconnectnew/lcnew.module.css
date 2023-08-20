@@ -1,0 +1,33 @@
+.Form {
+    text-align: center;
+  }
+  
+  .contactFormContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: grey;
+    width: 70%;
+    margin: 10%;
+  }
+  
+  .nameEmailContainers {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .subjectContainer {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .subjectBox {
+    width: 500px;
+  }
+  
+  .messageBox {
+    width: 500px;
+    height: 200px;
+  }

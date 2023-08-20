@@ -1,3 +1,69 @@
+import { useState } from 'react';
+
+export default function ContactForm() {
+    const [formData, setFormData] = useState({name: '', email: '', subject: '', message: ''});
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevFormData) => ({ ...prevFormData, [name]: value})); 
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert(`Name: ${formData.name}, Email: ${formData.email}, Subject: ${formData.subject}, Message: ${formData.message}`);
+    };
+    return (
+        <form onSubmit={handleSubmit}>
+
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange}/>
+
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange}/>
+
+            <label htmlFor="subject">Subject:</label>
+            <input type="subject" id="subject" name="subject" value={formData.subject} onChange={handleChange}/>
+
+            <label htmlFor="message">Message:</label>
+            <input type="" id="message" name="message" value={formData.message} onChange={handleChange}/>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    )
+}
+
+
+
+
+
+// import {useState} from 'react';
+ 
+// export default function ContactForm()  {
+// 	const  [name, setName] =  useState('');
+
+// 	const  handleChange = (e) => {
+// 		setName(e.target.value);
+// 	};
+
+// return  (
+// <form>
+// 	<label>Input Value:
+//         <input  
+//             type="text"  
+//             value={ name } 
+//             onChange={handleChange} 
+//         />
+// 	</label>
+// 	<p>Name: { name }</p>
+// </form>
+// )};
+
+
+
+// ====================================================
+
+
 // import { useState, useRef, useContext } from 'react';
 
 // // const [formData, setFormData] = useState({

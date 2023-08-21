@@ -10,14 +10,16 @@ import Navbar from "./components/Navbar";
 import github from "./icons/githubicon.png";
 import linkedin from "./icons/linkedinicon.png";
 import openicon from "./icons/openicon.png";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import tetris from "./tetrisScreenShot.png";
-import Weathernew from "./components/Weathernew";
+// import Weathernew from "./components/Weathernew";
 import email from "./icons/emailicon.png";
 import "./components/Aboutme/ame.module.css";
 import mycv from "./ronaldPowellCV.pdf";
 import cvicon from "./icons/cvicon.png";
 import weatherapi from './icons/weatherapp.png';
+import movieimage from './movieappimage.png';
+
 // import { Link } from 'react-router-dom';
 // import Letsconnectnew from './components/Letsconnectnew/Letsconnectnew';
 
@@ -25,28 +27,7 @@ function App() {
   return (
     <div className="App">
       <header className="headerMain">
-        {/* <Navbar /> */}
-
-        <nav className="navbar">
-          {/* <div className='headerLeft'> */}
-          <Weathernew />
-          {/* </div> */}
-          <div className="headerRight">
-            <Link activeClass="active" smooth spy to="home">
-              Home
-            </Link>
-            <Link activeClass="active" smooth spy to="projectsTitleBox">
-              Projects
-            </Link>
-            <Link activeClass="active" smooth spy to="about">
-              About Me
-            </Link>
-            <Link to="ContactForm">
-              {/* <Letsconnectnew /> */}
-              Let's Connect
-            </Link>
-          </div>
-        </nav>
+        <Navbar />
       </header>
       <br></br>
       <main id="home">
@@ -60,18 +41,18 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img className="linkedin" src={linkedin} title="LinkedIn" />
+                  <img className="linkedin" src={linkedin} title="LinkedIn" alt=''/>
                 </a>
                 <a
                   href="https://github.com/Notesmane"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img className="github" src={github} title="Github" />
+                  <img className="github" src={github} title="Github" alt='' />
                 </a>
 
-                <a href={mycv} target="_blank">
-                  <img className="resume" src={cvicon} title="Resume" />
+                <a href={mycv} target="_blank" rel='noreferrer'>
+                  <img className="resume" src={cvicon} title="Resume" alt=''/>
                 </a>
               </div>
               <p className="quickBlurb">
@@ -84,22 +65,23 @@ function App() {
               <div className="techskills">
                 <h4>Tech Stack </h4>
                 <div className="skillsbox">
-                  <img className="html" src={html} title="HTML-5" />
+                  <img className="html" src={html} title="HTML-5" alt=''/>
                 </div>
                 <div className="skillsbox">
-                  <img className="css" src={css} title="CSS3" />
+                  <img className="css" src={css} title="CSS3" alt=''/>
                 </div>
                 <div className="skillsbox">
-                  <img className="javasc" src={javasc} title="JavaScript" />
+                  <img className="javasc" src={javasc} title="JavaScript" alt=''/>
                 </div>
                 <div className="skillsbox">
-                  <img className="reackt" src={reackt} title="React" />
+                  <img className="reackt" src={reackt} title="React" alt=''/>
                 </div>
                 <div className="skillsbox">
                   <img
                     className="tailwind"
                     src={tailwind}
                     title="TailwindCSS"
+                    alt=''
                   />
                 </div>
               </div>
@@ -113,7 +95,7 @@ function App() {
           <div className="projectsTitleBox">
             <h2 className="titles">Projects</h2>
             <h4>
-              Each project crafted with efficiency, style and usability in mind.
+              Each crafted with efficiency, style and usability in mind.
             </h4>
           </div>
           <div className="mainProjectContainerTop">
@@ -126,6 +108,7 @@ function App() {
                 className="tetrisScreenShot"
                 src={tetris}
                 title="TetrisGame"
+                alt=''
               />
             </div>
             <div className="projectInfoColumn">
@@ -156,7 +139,7 @@ function App() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img className="github" src={github} title="Github" />
+                    <img className="github" src={github} title="Github" alt=''/>
                   </a>
                 </div>
 
@@ -167,7 +150,7 @@ function App() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img className="openIcon" src={openicon} title="OpenPage" />
+                    <img className="openIcon" src={openicon} title="OpenPage" alt=''/>
                   </a>
                 </div>
               </div>
@@ -200,7 +183,7 @@ function App() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img className="github" src={github} title="Github" />
+                    <img className="github" src={github} title="Github" alt=''/>
                   </a>
                 </div>
 
@@ -211,7 +194,7 @@ function App() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img className="openIcon" src={openicon} title="OpenPage" />
+                    <img className="openIcon" src={openicon} title="OpenPage" alt=''/>
                   </a>
                 </div>
               </div>
@@ -223,6 +206,7 @@ function App() {
                 className="tetrisScreenShot"
                 src={weatherapi}
                 title="The Weather API"
+                alt=''
               />
             </div>
           </div>
@@ -234,8 +218,9 @@ function App() {
               {/* PROJECT IMAGE CONTAINER */}
               <img
                 className="tetrisScreenShot"
-                src={tetris}
+                src={movieimage}
                 title="TetrisGame"
+                alt=''
               />
             </div>
             <div className="projectInfoColumn">
@@ -258,11 +243,11 @@ function App() {
                 <div className="sourceLinks">
                   <h4>Code:</h4>
                   <a
-                    href="https://github.com/Notesmane/Tetris-Project"
+                    href="https://github.com/Notesmane/Movie-App-Practice"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img className="github" src={github} title="Github" />
+                    <img className="github" src={github} title="Github" alt=''/>
                   </a>
                 </div>
 
@@ -273,7 +258,7 @@ function App() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img className="openIcon" src={openicon} title="OpenPage" />
+                    <img className="openIcon" src={openicon} title="OpenPage" alt=''/>
                   </a>
                 </div>
               </div>
@@ -338,21 +323,21 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            <img className="linkedin" src={linkedin} title="LinkedIn" />
+            <img className="linkedin" src={linkedin} title="LinkedIn" alt=''/>
           </a>
           <a
             href="https://github.com/Notesmane"
             target="_blank"
             rel="noreferrer"
           >
-            <img className="github" src={github} title="Github" />
+            <img className="github" src={github} title="Github" alt=''/>
           </a>
           <a
-            href="https://github.com/Notesmane"
+            href="mailto:ronpowell156@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
-            <img className="email" src={email} title="Contact" />
+            <img className="email" src={email} title="Contact" alt=''/>
           </a>
           {/* <button>Contact</button> */}
           {/* <button href="https://github.com/Notesmane">Github</button> */}
@@ -368,3 +353,26 @@ function App() {
 }
 
 export default App;
+
+
+
+// {/* <nav className="navbar">
+// {/* <div className='headerLeft'> */}
+// <Weathernew />
+// {/* </div> */}
+// <div className="headerRight">
+//   <Link activeClass="active" smooth spy to="home">
+//     Home
+//   </Link>
+//   <Link activeClass="active" smooth spy to="projectsTitleBox">
+//     Projects
+//   </Link>
+//   <Link activeClass="active" smooth spy to="about">
+//     About Me
+//   </Link>
+//   <Link to="ContactForm">
+//     {/* <Letsconnectnew /> */}
+//     Let's Connect
+//   </Link>
+// </div>
+// </nav> */}

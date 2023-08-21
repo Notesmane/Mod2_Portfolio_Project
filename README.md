@@ -5,7 +5,8 @@
 
 API idea1: Google Translate
 API idea2: REST Countries
-
+API idea3: chatbot
+API idea4: real time weather 
 
 ## Tech Stack
     1. HTML
@@ -15,13 +16,20 @@ API idea2: REST Countries
     5. Tailwind
 
 ## Resources
-
     - Youtube
     - MDN
     - https://app.diagrams.net/ (for wire framing)
     - flaticon.com and vectorlogo.zone for tech stack logos
     - w3schools.com for css info
-    - google for css and javasctipt help searches
+    - google for css, javasctipt, tailwind and react help searches
+    - trello
+
+## Future Iterations
+    - email/message page where the user can input name, email, subject and message which will be sent to my email
+    - navbar to stay at the top
+    - add animations of major sections to slide into position from out of the screen when sections come into view on scroll
+    - better projects
+    - better all around spacing of divs/sections
 
 
 ## Attributions

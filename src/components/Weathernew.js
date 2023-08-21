@@ -34,11 +34,11 @@ function Weather() {
       <div className="weatherLeft">
         <div className="cityleft">
           <p>{data.name}</p>
-          {data.main ? <p>{data.main.temp.toFixed()}ºF</p> : null}
+          {data.main ? <p className='actualTemp'>{data.main.temp.toFixed()}ºF</p> : null}
         </div>
         <div className='cityRight'>
           {data.main ? (<p className="bold">Real Feel: {data.main.feels_like.toFixed()}ºF</p>) : null}
-          {data.weather ? (<p className="description">{data.weather[0].main}</p>) : null}
+          {data.weather ? (<p className="bold">{data.weather[0].main}</p>) : null}
         </div>
       </div>
     </div>

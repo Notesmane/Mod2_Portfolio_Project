@@ -1,8 +1,8 @@
 import "./App.css";
 import { useState } from "react";
-import styles from './lcnew.module.css';
+import './lcnew.module.css';
 
-export default function ContactForm() {
+function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -106,3 +106,5 @@ export default function ContactForm() {
     </div>
   );
 }
+
+export default ContactForm;

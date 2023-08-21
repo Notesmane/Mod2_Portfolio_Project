@@ -1,6 +1,6 @@
 // import cvicon from '../src/icons/cvicon.png';
 // import mycv from './compon';
-import styles from './ame.module.css';
+import './ame.module.css';
 
 
 
@@ -63,7 +63,7 @@ function Aboutme() {
             {/* <img className="email" src={cvicon} title="Contact" /> */}
           </a>
       <div className="forFun">
-      <select id="For Fun">
+      <select id="forFun">
         <option value="For Fun" selected>
         For Fun
         </option>
@@ -71,7 +71,7 @@ function Aboutme() {
         <option value="Travelling to New Places">Travelling to New Places</option>
         <option value="Anything Batman">Anything Batman</option>
         <option value="Going to The Movies">Going to The Movies</option>
-        <option value="Beach Days">Beach Days</option>
+        <option value="Beach/Park Days">Beach/Park Days</option>
       </select>
         {/* <h2>For Fun</h2>
         <ul>

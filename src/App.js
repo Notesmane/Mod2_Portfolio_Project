@@ -10,11 +10,13 @@ import Navbar from "./components/Navbar";
 import github from "./icons/githubicon.png";
 import linkedin from "./icons/linkedinicon.png";
 import openicon from "./icons/openicon.png";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import tetris from './tetrisScreenShot.png';
 import Weathernew from './components/Weathernew';
 import email from './icons/emailicon.png';
-// import Letsconnectnew from './components/Letsconnectnew';
+import './components/Aboutme/ame.module.css';
+import { Link } from 'react-router-dom';
+// import Letsconnectnew from './components/Letsconnectnew/Letsconnectnew';
 
 function App() {
   return (
@@ -36,7 +38,7 @@ function App() {
               <Link activeClass="active" smooth spy to="about">
                 About Me
               </Link>
-              <Link activeClass="active" smooth spy to="letconnect">
+              <Link to="ContactForm">
                 {/* <Letsconnectnew /> */}
                 Let's Connect
               </Link>
@@ -81,7 +83,7 @@ function App() {
               </div>
             </div>
             <div className="homeContentRight">
-              <img className="h-auto max-w-full" alt="..." src={headshot1} />
+              <img className="h-full max-w-full" alt="..." src={headshot1} />
             </div>
           </div>
         </section>
@@ -125,8 +127,9 @@ function App() {
 
                 <div className='sourceLinks'>
                   <h4>Live Demo</h4>
+                  <a href="https://notesmane.github.io/Tetris-Project/" target='_blank' rel='noreferrer'>
                   <img className="openIcon" src={openicon} title="OpenPage" />
-
+                  </a>
                 </div>
               </div>
 

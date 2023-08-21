@@ -41,8 +41,9 @@
  .navbar {
   width: 100%;
   font-size: .8rem;
-  margin-left: 0px;
+  /* margin-left: 0px; */
   text-decoration: none;
+  height: 50px;
   /* text-decoration: double; */
    padding: 0px;
    display: flex;
@@ -110,12 +111,17 @@
     background-color: white;
   }
 
-  .bold {
+  .bold, .bold2 {
     padding-top: 10%;
     display: flex;
     justify-content: flex-start;
     align-items:flex-end;
     width: 150px;
+  }
+
+  .bold2 {
+    width: 128px;
+    border-right: 2px solid darkcyan;
   }
   
   .weatherContainer .description {
@@ -227,6 +233,11 @@
   font-size: 2rem;
   color: darkcyan;
  }
+
+ .projectsTitleBox h4{
+  padding: 2% 0 0 0;
+  border-bottom: 2px solid darkcyan;
+ }
  /* .content {
    max-width: 600px;
    margin: 40px auto;
@@ -247,7 +258,7 @@
 } 
 
 .projectContents {
-  margin: 0;
+  margin: 0 2% 0 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,7 +266,18 @@
 }
 
 .projectContents h3 {
-  margin: 0;
+  margin: 0 0 4% -10%;
+  color: darkcyan;
+  font-size: 1.7em;
+
+}
+
+.languages {
+  margin: 4% 2% 0 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
  .mainContainer {
@@ -269,6 +291,22 @@
   height: 100%;
   /* margin-top: 20%;
   margin-bottom: 20%; */
+ }
+
+ .projectLinks {
+  margin: 5% 2% 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+ }
+
+ .personalContacts {
+  margin: 2% 0 2% 0;
+  padding: 0%;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
  }
 
  .projectImageColumn {
@@ -291,8 +329,12 @@
 
  .sourceLinks {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
+ }
+
+ .sourceLinks h4 {
+  margin-top: 10%;
  }
 
  .tetrisScreenShot {
@@ -345,7 +387,7 @@
  .techskills h4 {
   margin: 0;
   display: flex;
-  justify-conent: flex-start;
+  justify-content: flex-start;
  }
 
 
@@ -354,6 +396,7 @@
   justify-content: space-around;
   width: 100%;
   height: 30px;
+  margin-top: 6%;
 }
 
 /* #about {
@@ -377,16 +420,18 @@ footer {
   border-top: 1px solid dimgrey;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
 }
 
  .footer {
-  margin: 5% 0 0 0 ;
+  margin: 4% 0 0 0 ;
   padding: 0;
   height: 3%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  line-height: .1em;
   gap: 3em;
  }
 
@@ -400,9 +445,11 @@ footer {
 }
 
 .aboutMe {
-  /* border: 2px solid darkcyan; */
-  margin: 0%;
-  padding: 0;
+  border-top: 2px solid darkcyan;
+  border-left: 2px solid darkcyan;
+  border-right: 2px solid darkcyan;
+  margin: 5% 0 0 0;
+  padding: 0 0 0 2%;
   width: 100%;
   font-size: 2rem;
   color: darkcyan;
@@ -410,9 +457,13 @@ footer {
 }
 
 .biotext {
-  margin: 0%;
-  padding: 0;
-  border: 2px solid darkcyan;
+  border-bottom: 2px solid darkcyan;
+  border-left: 2px solid darkcyan;
+  border-right: 2px solid darkcyan;
+  background-color: rgba(0,139,139, 0.1);
+  margin: 0;
+  padding: 1%;
+  /* border: 2px solid darkcyan; */
   font-size: 1rem;
   width: 100%;
   height: 10rem;
@@ -427,15 +478,25 @@ footer {
  }
 
 .forFun, .forFun h2, #forFun {
+  color: darkcyan;
   margin: 0;
   padding: 0;
+}
+
+#forFun {
+  border: 1px solid darkcyan;
+  border-radius: 15px;
 }
 
 .forFun {
   padding-bottom: 10%;
 }
 
-.mainContainer {
+option {
+  padding-left: 2%;
+}
+
+.mainContainer, .mainProjectContainer, .mainProjectContainerTop {
   display: flex;
   align-items: center;
   gap: 2em;
@@ -445,4 +506,22 @@ footer {
   height: 100%;
   /* margin-top: 20%;
   margin-bottom: 20%; */
+ }
+
+ .mainProjectContainer {
+  margin: 20% 0 0 0;
+ }
+
+ .mainProjectContainerTop {
+  margin-top: 10%;
+ }
+
+ .copyRights {
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
  }

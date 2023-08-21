@@ -21,12 +21,13 @@ function Aboutme() {
         and collaboratively cultivate my technical skills. Committed to
         delivering innovative solutions and contributing to the success of a
         leading software engineering organization.
-
+        <br></br><br></br>
         My transition into Tech... As a Carpenter in the NYC Union, I honed my
         skills in all aspects of carpentry. However, due to the changing climate
         of the Construction industry post-lockdown, I decided to explore a new
         industry that had captured my interest during the quarantine;
         day-trading.
+        <br></br><br></br>
         During this time, I delved into day-trading and discovered TD
         Ameritrade's ThinkOrSwim platform, which featured a proprietary coding
         language called "Thinkscript." As someone who had a natural affinity for
@@ -35,6 +36,7 @@ function Aboutme() {
         Thinkscript, the more I realized that I had rekindled my passion for
         computer science and the creativity that can be expressed through
         coding.
+        <br></br><br></br>
         After pausing my trading activities in September 2022, I enrolled in
         Harvard's Extension course Cs50x, which provides a comprehensive
         introduction to software engineering, including C, Python, Javascript,
@@ -44,7 +46,7 @@ function Aboutme() {
         Computing at the IBM Skills Network, Intro to Agile Dev and Scrum on
         Coursera, Intro to DevOps also on Coursera, and even CompTia's
         CyberSecurity(CC) course.
-
+        <br></br><br></br>
         I'm currently enrolled in PerScholas for Software Engineering, which is
         sponsored by Google and Comcast.
 
